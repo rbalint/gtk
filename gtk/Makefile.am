@@ -496,6 +496,7 @@ gtk_private_h_sources =		\
 	gtksearchenginesimple.h	\
 	gtksearchentryprivate.h \
 	gtkselectionprivate.h	\
+	gtksidebarrow.h		\
 	gtksettingsprivate.h	\
 	gtksizegroup-private.h	\
 	gtksizerequestcacheprivate.h	\
@@ -793,6 +794,7 @@ gtk_base_c_sources = 		\
 	gtkseparatormenuitem.c	\
 	gtkseparatortoolitem.c	\
 	gtksettings.c		\
+	gtksidebarrow.c		\
 	gtksizegroup.c		\
 	gtksizerequest.c	\
 	gtksizerequestcache.c	\
@@ -1086,7 +1088,8 @@ templates =				\
 	ui/gtksearchbar.ui		\
 	ui/gtkscalebutton.ui		\
 	ui/gtkstatusbar.ui		\
-	ui/gtkvolumebutton.ui
+	ui/gtkvolumebutton.ui		\
+	ui/gtksidebarrow.ui
 
 #
 # rules to generate built sources

@@ -78,6 +78,31 @@ typedef enum {
   GTK_PLACES_OPEN_NEW_WINDOW = 1 << 2
 } GtkPlacesOpenFlags;
 
+/* Keep order, since it's used for the sort functions */
+typedef enum {
+  SECTION_INVALID,
+  SECTION_COMPUTER,
+  SECTION_DEVICES,
+  SECTION_NETWORK,
+  SECTION_BOOKMARKS,
+  N_SECTIONS
+} GtkPlacesSidebarSectionType;
+
+typedef enum {
+  PLACES_INVALID,
+  PLACES_BUILT_IN,
+  PLACES_XDG_DIR,
+  PLACES_MOUNTED_VOLUME,
+  PLACES_BOOKMARK,
+  PLACES_HEADING,
+  PLACES_CONNECT_TO_SERVER,
+  PLACES_ENTER_LOCATION,
+  PLACES_DROP_FEEDBACK,
+  PLACES_BOOKMARK_PLACEHOLDER,
+  N_PLACES
+} GtkPlacesSidebarPlaceType;
+
+
 GDK_AVAILABLE_IN_3_10
 GType              gtk_places_sidebar_get_type                   (void) G_GNUC_CONST;
 GDK_AVAILABLE_IN_3_10
